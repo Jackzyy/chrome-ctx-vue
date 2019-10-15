@@ -1,6 +1,6 @@
 <template>
   <div class="main_app">
-    <h1>Hello popup</h1>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -12,11 +12,7 @@ export default {
 
 <style>
 .main_app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 400px;
+  margin: auto
 }
 </style>

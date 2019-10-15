@@ -24,8 +24,21 @@ const plugins =
   }]
 
 module.exports = {
+  publicPath: './',
   pages: pagesObj,
   configureWebpack: {
+    entry: {
+      'content': './src/content/index.js'
+    },
+    output: {
+      filename: 'js/[name].js'
+    },
     plugins: [CopyWebpackPlugin(plugins)]
+    // css: {
+    //   extract: {
+    //     filename: 'css/[name].css'
+    //     // chunkFilename: 'css/[name].css'
+    //   }
+    // }
   }
 }
